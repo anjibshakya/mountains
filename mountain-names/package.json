@@ -1,0 +1,29 @@
+{
+  "name": "mountain-names",
+  "version": "1.0.0",
+  "description": "Get mountain names",
+  "main": "src/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://anjibshakya@github.com/anjibshakya/mountains.git"
+  },
+  "keywords": [
+    "random",
+    "mountains"
+  ],
+  "author": "Anjib Shakya <shakyaanjib@gmail.com> (http://www.logicseedtech.com.np/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/anjibshakya/mountains/issues"
+  },
+  "homepage": "https://github.com/anjibshakya/mountains#readme",
+  "dependencies": {
+    "unique-random-array": "1.0.0"
+  }
+}

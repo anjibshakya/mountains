@@ -1,0 +1,174 @@
+C:\wamp\www\mountains\mountain-names>npm init
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help json` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg> --save` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+name: (mountain-names)
+version: (1.0.0)
+description: Get mountain names
+entry point: (index.js) src/index.js
+test command:
+git repository: https://anjibshakya@github.com/anjibshakya/mountains.git
+keywords: random mountains
+license: (MIT)
+About to write to C:\wamp\www\mountains\mountain-names\package.json:
+
+{
+  "name": "mountain-names",
+  "version": "1.0.0",
+  "description": "Get mountain names",
+  "main": "src/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://anjibshakya@github.com/anjibshakya/mountains.git"
+  },
+  "keywords": [
+    "random",
+    "mountains"
+  ],
+  "author": "Anjib Shakya <shakyaanjib@gmail.com> (http://www.logicseedtech.com.np/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/anjibshakya/mountains/issues"
+  },
+  "homepage": "https://github.com/anjibshakya/mountains#readme"
+}
+
+
+Is this ok? (yes)
+
+C:\wamp\www\mountains\mountain-names>npm install --save unique-random-array
+mountain-names@1.0.0 C:\wamp\www\mountains\mountain-names
+`-- unique-random-array@1.0.0
+  `-- unique-random@1.0.0
+
+
+C:\wamp\www\mountains\mountain-names>node
+> var lib = require('./src/index.js');
+Error: Cannot find module './src/index.js'
+    at Function.Module._resolveFilename (module.js:469:15)
+    at Function.Module._load (module.js:417:25)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+    at repl:1:11
+    at sigintHandlersWrap (vm.js:22:35)
+    at sigintHandlersWrap (vm.js:96:12)
+    at ContextifyScript.Script.runInThisContext (vm.js:21:12)
+    at REPLServer.defaultEval (repl.js:346:29)
+    at bound (domain.js:280:14)
+>
+> var lib = require('/src/index.js');
+Error: Cannot find module '/src/index.js'
+    at Function.Module._resolveFilename (module.js:469:15)
+    at Function.Module._load (module.js:417:25)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+    at repl:1:11
+    at sigintHandlersWrap (vm.js:22:35)
+    at sigintHandlersWrap (vm.js:96:12)
+    at ContextifyScript.Script.runInThisContext (vm.js:21:12)
+    at REPLServer.defaultEval (repl.js:346:29)
+    at bound (domain.js:280:14)
+>
+> var lib = require('/index.js');
+Error: Cannot find module '/index.js'
+    at Function.Module._resolveFilename (module.js:469:15)
+    at Function.Module._load (module.js:417:25)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+    at repl:1:11
+    at sigintHandlersWrap (vm.js:22:35)
+    at sigintHandlersWrap (vm.js:96:12)
+    at ContextifyScript.Script.runInThisContext (vm.js:21:12)
+    at REPLServer.defaultEval (repl.js:346:29)
+    at bound (domain.js:280:14)
+> var lib = require('/public_html/index.js');
+Error: Cannot find module '/public_html/index.js'
+    at Function.Module._resolveFilename (module.js:469:15)
+    at Function.Module._load (module.js:417:25)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+    at repl:1:11
+    at sigintHandlersWrap (vm.js:22:35)
+    at sigintHandlersWrap (vm.js:96:12)
+    at ContextifyScript.Script.runInThisContext (vm.js:21:12)
+    at REPLServer.defaultEval (repl.js:346:29)
+    at bound (domain.js:280:14)
+> var lib = require('./public_html/index.js');
+Error: Cannot find module './mountains.json'
+    at Function.Module._resolveFilename (module.js:469:15)
+    at Function.Module._load (module.js:417:25)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (C:\wamp\www\mountains\mountain-names\public_html\index.js:7:21)
+    at Module._compile (module.js:570:32)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+> var lib = require('./public_html/index.js');
+Error: Cannot find module 'mountains.json'
+    at Function.Module._resolveFilename (module.js:469:15)
+    at Function.Module._load (module.js:417:25)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (C:\wamp\www\mountains\mountain-names\public_html\index.js:7:21)
+    at Module._compile (module.js:570:32)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+> var lib = require('/public_html/index.js');
+Error: Cannot find module '/public_html/index.js'
+    at Function.Module._resolveFilename (module.js:469:15)
+    at Function.Module._load (module.js:417:25)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+    at repl:1:11
+    at sigintHandlersWrap (vm.js:22:35)
+    at sigintHandlersWrap (vm.js:96:12)
+    at ContextifyScript.Script.runInThisContext (vm.js:21:12)
+    at REPLServer.defaultEval (repl.js:346:29)
+    at bound (domain.js:280:14)
+> var lib = require('./public_html/index.js');
+Error: Cannot find module 'mountains.json'
+    at Function.Module._resolveFilename (module.js:469:15)
+    at Function.Module._load (module.js:417:25)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (C:\wamp\www\mountains\mountain-names\public_html\index.js:7:21)
+    at Module._compile (module.js:570:32)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+> var lib = require('./public_html/index.js');
+undefined
+> lib.all
+[ 'everest', 'lhoste' ]
+> lib.random()
+'lhoste'
+>
+> lib.random()
+'everest'
+> lib.random()
+'lhoste'
+> lib.random()
+'everest'
+> lib.random()
+'lhoste'
+> lib.random()
+'everest'
+>
